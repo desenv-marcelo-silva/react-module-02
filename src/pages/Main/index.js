@@ -69,7 +69,7 @@ export default class Main extends Component {
             onChange={this.handleInputChange}
           />
 
-          <SubmitButton loading={loading}>
+          <SubmitButton loading={loading ? 1 : 0}>
           { loading 
              ? (<FaSpinner color="#FFF" size={14} /> ) 
              : (<FaPlus color="#FFF" size={14} />)}
